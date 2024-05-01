@@ -1,10 +1,10 @@
 # Basketball_draft_project
 My Basketball Draft Project
 
-*What does it do?
+* What does it do?
 Tells users how good it expects players in college to be and where it ranks them in that draft class.
 
-*How does it do it?
+* How does it do it?
 1. Scores players performance in the NBA.
 2. Correlates that data with their statistics playing college basketball.
 3. Crunches these numbers using a machine learning algorithm to find the statistics it deems to be the most important in each position.
