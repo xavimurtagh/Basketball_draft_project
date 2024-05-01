@@ -1,0 +1,75 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    {{ name[0] }}
+{% endblock %}
+{% block main %}
+<head>
+    <h1>{{ name[0] }}</h1>
+</head>
+<main class="container py-5 text-center">
+    <a href="/profile/{{ player[0][0] }}/favourite">Favourite/Unfavourite</a>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th class="text-start">Year</th>
+                <th class="text-start">Pos</th>
+
+                <th class="text-end">Guard Score</th>
+                <th class="text-end">Forward Score</th>
+                <th class="text-end">Centre Score</th>
+                <th class="text-end">Actual Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in player %}
+                <tr>
+                        <td class="text-start">{{ row[2] }}</td>
+                        <td class="text-start">{{ row[1] }}</td>
+                        <!--
+                        <td class="text-start">{{ row[-12] }}</td>
+                        <td class="text-start">{{ row[-11] }}</td>
+                        <td class="text-start">{{ row[-10] }}</td>
+                        <td class="text-start">{{ row[-9] }}</td>
+                        <td class="text-start">{{ row[-8] }}</td>
+                        <td class="text-end">{{ row[-7] }}</td>
+                        <td class="text-end">{{ row[-6] }}</td>
+                        <td class="text-end">{{ row[-5] }}</td>
+                        -->
+                        <td class="text-end">{{ row[-4] }}</td>
+                        <td class="text-end">{{ row[-3] }}</td>
+                        <td class="text-end">{{ row[-2] }}</td>
+                        <td class="text-end">{{ row[-1] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th class="text-start">Pure PG Score</th>
+                <th class="text-start">Combo G Score</th>
+                <th class="text-start">Scoring PG Score</th>
+                <th class="text-start">C Score</th>
+                <th class="text-start">PF/C Score</th>
+                <th class="text-end">Stretch 4 Score</th>
+                <th class="text-end">Wing Guard Score</th>
+                <th class="text-end">Wing Forward Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in player %}
+                <tr>
+                    <td class="text-start">{{ row[-12] }}</td>
+                    <td class="text-start">{{ row[-11] }}</td>
+                    <td class="text-start">{{ row[-10] }}</td>
+                    <td class="text-start">{{ row[-9] }}</td>
+                    <td class="text-start">{{ row[-8] }}</td>
+                    <td class="text-end">{{ row[-7] }}</td>
+                    <td class="text-end">{{ row[-6] }}</td>
+                    <td class="text-end">{{ row[-5] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+</main>
+{% endblock %}

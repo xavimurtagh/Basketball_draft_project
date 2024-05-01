@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Draft year
+{% endblock %}
+{% block main %}
+<main class="container py-5 text-center">
+    <h3>Draft</h3>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th class="text-start">Pick</th>
+                <th class="text-start">Name</th>
+                <th class="text-end">Pos</th>
+                <th class="text-end">Best Pos</th>
+                <th class="text-end">Best Score</th>
+                <th class="text-end">Actual Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in range(60) %}
+                <tr>
+                    <td class="text-start">{{ i+1 }}</td>
+                    <td class="text-start"><a href="/profile/{{ players[i][-1] }}">{{ players[i][0] }}</a></td>
+                    <td class="text-end">{{ players[i][1] }}</td>
+                    <td class="text-end">{{ players[i][2] }}</td>
+                    <td class="text-end">{{ players[i][3] }}</td>
+                    <td class="text-end">{{ players[i][4] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</main>
+{% endblock %}

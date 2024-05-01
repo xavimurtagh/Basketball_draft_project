@@ -1,0 +1,81 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Rankings year {{ guards[0][2] }}
+{% endblock %}
+{% block main %}
+<head>
+    <h2>{{ guards[0][2] }}</h2>
+</head>
+<main class="container py-5 text-center">
+    <h3>Guards</h3>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th class="text-start">Year</th>
+                <th class="text-start">Pos</th>
+                <th class="text-start">Name</th>
+                <th class="text-end">Guard Score</th>
+                <th class="text-end">Actual Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for guard in guards %}
+                <tr>
+                    <td class="text-start">{{ guard[2] }}</td>
+                    <td class="text-start">{{ guard[1] }}</td>
+                    <td class="text-start"><a href="/profile/{{ guard[0] }}">{{ guard[3] }}</a></td>
+                    <td class="text-end">{{ guard[-4] }}</td>
+                    <td class="text-end">{{ guard[-1] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <h3>Forwards</h3>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th class="text-start">Year</th>
+                <th class="text-start">Pos</th>
+                <th class="text-start">Name</th>
+                <th class="text-end">Forward Score</th>
+                <th class="text-end">Actual Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for forward in forwards %}
+                <tr>
+                    <td class="text-start">{{ forward[2] }}</td>
+                    <td class="text-start">{{ forward[1] }}</td>
+                    <td class="text-start"><a href="/profile/{{ forward[0] }}">{{ forward[3] }}</a></td>
+                    <td class="text-end">{{ forward[-3] }}</td>
+                    <td class="text-end">{{ forward[-1] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <h3>Centres</h3>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th class="text-start">Year</th>
+                <th class="text-start">Pos</th>
+                <th class="text-start">Name</th>
+                <th class="text-end">Centre Score</th>
+                <th class="text-end">Actual Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for centre in centres %}
+                <tr>
+                    <td class="text-start">{{ centre[2] }}</td>
+                    <td class="text-start">{{ centre[1] }}</td>
+                    <td class="text-start"><a href="/profile/{{ centre[0] }}">{{ centre[3] }}</a></td>
+                    <td class="text-end">{{ centre[-2] }}</td>
+                    <td class="text-end">{{ centre[-1] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</main>
+{% endblock %}
