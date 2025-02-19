@@ -1,6 +1,11 @@
 # Basketball Draft Helper 
 #### Description:
 
+The easiset way to see what I've done is to watch the mp4 in this directory, it explains the project, shows some of the code with a brief explanation of it and what it looks like in website form.
+Please forgive the design and functionality of the website, my command of html is minimal and not the focus of the project. 
+If you want to run it on your device you only have to download the website folder and run the command flask run on the directory.
+
+
 * What does it do?
   
 Tells users how good it expects players in college to be and where it ranks them in that draft class.
