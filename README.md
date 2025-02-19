@@ -4,7 +4,8 @@
 The easiest way to see what I've done is to watch the mp4 in this directory, it explains the project, shows some of the code with a brief explanation of it and what it looks like in website form.
 Please forgive the design and functionality of the website, my command of html is minimal and not the focus of the project. 
 If you want to run it on your device you only have to download the website folder and run the command 'flask run' in the terminal of the directory.
-
+[
+https://github.com/xavimurtagh/Basketball_draft_project/blob/main/Basketball%20draft%20helper%20by%20Xavier%20Murtagh%20CS50.mp4](https://xavimurtagh.github.io/Basketball_draft_project/Basketball%20draft%20helper%20by%20Xavier%20Murtagh%20CS50.mp4)
 
 * What does it do?
   
