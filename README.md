@@ -1,5 +1,4 @@
 # Basketball Draft Helper 
-#### Video Demo:  <https://www.youtube.com/watch?v=iZXiIPC7who>
 #### Description:
 
 * What does it do?
