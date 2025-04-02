@@ -86,7 +86,6 @@ prompt-toolkit==3.0.24
 ptyprocess==0.7.0
 pure-eval==0.2.2
 pycparser==2.21
-pygame==2.1.2
 Pygments==2.11.2
 pyparsing==3.0.7
 pyrsistent==0.19.2
